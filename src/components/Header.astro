@@ -1,0 +1,268 @@
+---
+
+---
+
+<header>
+    <div class="base_width">
+        <a href="/" class="logo">
+            <img src="/logo/logo.png" alt="FreshOps Logo" draggable="false">
+        </a>
+
+        <nav>
+            <div class="ctnr">
+                <a href="#features">Features</a>
+                <a href="#pricing">Pricing</a>
+                <a href="/contact/">Contact</a>
+            </div>
+            
+            <a href="/contact/" class="main cta"><span>Try FreshOps</span></a>
+
+            <svg class="corner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.5 100.5"><defs><style>.cls-1{fill:#fff;stroke-width:0px;}</style></defs><path class="cls-1" d="m100.5,0H0v100.5C0,44.99,44.99,0,100.5,0Z"/></svg>
+        </nav>
+
+        <button class="hambt" type="button" aria-label="Open navigation menu">
+            <div class="ctnr">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+    </div>
+
+    <svg class="corner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.5 100.5"><defs><style>.cls-1{fill:#fff;stroke-width:0px;}</style></defs><path class="cls-1" d="m100.5,0H0v100.5C0,44.99,44.99,0,100.5,0Z"/></svg>
+</header>
+
+<style>
+    header {
+        height:var(--header-height);
+        display: flex;
+        justify-content: center;
+        border-radius: 0 0 clamp(3rem, 10vw, 6rem) 0;
+        background-color: var(--light);
+        position: fixed;
+        top:0;
+        left:0;
+        right: 0;
+        z-index: 2;
+        filter: drop-shadow(0.1rem 0.1rem var(--light-a));
+    }
+
+    header > .corner {
+        position: absolute;
+        left:0;
+        top: calc(100% - 0.1rem);
+        width: clamp(3rem, 10vw, 6rem);
+        height: clamp(3rem, 10vw, 6rem);
+    }
+
+    header .base_width {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2.5vw;
+    }
+
+    header .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: 100%;
+    }
+
+    header .logo img {
+        height: 100%;
+        width: clamp(1rem,40vmin,20rem);
+    }
+
+    nav {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: fit-content;
+        background-color: var(--light);
+        padding-block: 2rem;
+        color: var(--dark);
+        font-size: clamp(1.5rem, 4vw, 1.7rem);
+        border-radius: calc(clamp(3rem,10vw,6rem) * 0.7) 0 0 calc(clamp(3rem,10vw,6rem) * 0.7);
+        font-weight: 600;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
+    }
+
+    nav, nav > .ctnr {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(1rem, 4vw, 2rem);
+    }
+
+    nav.show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(10%);
+    }
+
+    nav a {
+        padding: 0.7rem 3rem;
+        background-color: var(--light-a);
+        margin-inline: 2rem;
+        border-radius: 0.5rem;
+        text-align: center;
+    }
+
+    nav .corner {
+        width: calc(clamp(3rem,10vw,6rem) * 0.7);
+        height: calc(clamp(3rem,10vw,6rem) * 0.7);
+        position: absolute;
+        bottom: calc(100% - 0.1rem);
+        right: 0;
+        transform: rotate(180deg);
+    }
+
+    header .main.cta {
+        background-color: var(--c1);
+        background-image: linear-gradient(150deg,var(--c2),var(--c1) 50%);
+        padding: 1rem 3rem;
+        font-weight: 700;
+        border: 0.1rem solid var(--c2);
+        width: fit-content;
+        margin-inline: 2rem;
+        border-radius: 5rem;
+        position: relative;
+        color: var(--grey);
+        padding: clamp(0.7rem,3.5vw,1.4rem) clamp(1.6rem,7vw,3.3rem);
+    }
+
+    header .main.cta span {
+        position: relative;
+    }
+
+    header .main.cta::before {
+        content: "";
+        position: absolute;
+        inset: 0.4rem;
+        background-color: rgb(255 255 255 / 62%);
+        border-radius: 5rem;
+        transition: background-color 0.2s ease;
+    }
+
+    header .main.cta:hover:before {
+        background-color: rgb(255 255 255 / 100%);
+        transition: background-color 0s ease;
+    }
+
+    .hambt {
+        width: var(--header-height);
+        height:var(--header-height);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        margin-right: calc((var(--header-height) - clamp(2.5rem,9vw,4rem)) / -2);
+    }
+
+    .hambt > .ctnr {
+        width: clamp(2.5rem,8vw,4rem);
+        height: clamp(2rem,7vw,3.5rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .hambt span {
+        height: 19%;
+        background-color: var(--c1);
+        border-radius: 0.2rem;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .hambt.close {
+    }
+
+    .hambt.close span:nth-child(1) {
+        transform: translateY(250%) rotate(45deg);
+    }
+
+    .hambt.close span:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+
+    .hambt.close span:nth-child(3) {
+        opacity: 0;
+        transform: translateY(-220%);
+    }
+
+    @media screen and (min-width: 1150px) {
+        .hambt {
+            display: none;
+        }
+
+        nav {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            top: unset;
+            background-color: transparent;
+            border-radius: unset;
+            flex: 1;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: unset;
+        }
+
+        nav a {
+            margin-inline: unset;
+            padding-inline: 1.5rem;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--light-a);
+            transition: background-color 0s ease;
+        }
+
+        nav, nav > .ctnr {
+            flex-direction: row;
+        }
+    }
+</style>
+
+<script>
+    const menuBt = document.querySelector(".hambt");
+    const nav = document.querySelector("header nav");
+    const navBts = document.querySelectorAll("header nav a");
+
+    let showingMenu = false;
+
+    function toggleNav() {
+        if (showingMenu == false) {
+            nav.classList.add("show");
+            menuBt.classList.add("close");
+
+            showingMenu = true;
+        } else {
+            nav.classList.remove("show");
+            menuBt.classList.remove("close");
+
+            showingMenu = false;
+        }
+    }
+
+    if(window.getComputedStyle(menuBt).display != "none") {
+        menuBt.addEventListener("click", toggleNav);
+
+        for (let i = 0; i < navBts.length; i++) {
+            navBts[i].addEventListener("click", toggleNav);
+        }
+
+        window.addEventListener("scroll", function (e) {
+            if (showingMenu == true) {
+                toggleNav();
+            }
+        });
+    }
+</script>
