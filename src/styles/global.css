@@ -17,6 +17,7 @@ html.sr .reveal, html.sr .reveal_steps1,  html.sr .reveal_steps2 {
     --c2:#ece634;
 
     --c3:#4157aa;
+    --c3-a:#5472e4;
 
     --max-width: 135rem;
 
@@ -28,6 +29,8 @@ html.sr .reveal, html.sr .reveal_steps1,  html.sr .reveal_steps2 {
     --header-height:clamp(1rem,17vmin,8.5rem);
 
     --roulette-size:clamp(25rem, 25vw, 30rem);
+
+    --testimonial-width:clamp(15rem, 81vw, 100rem);
 }
 
 .base_width {

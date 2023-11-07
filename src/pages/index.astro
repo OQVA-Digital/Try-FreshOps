@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+import ContactSection from '../components/ContactSection.astro';
+
 import '../styles/home.css'
 
 import WorkforceManagement from '../components/vectors/WorkforceManagement.astro';
@@ -8,12 +10,22 @@ import Schedule from '../components/vectors/Schedule.astro';
 import Attendance from '../components/vectors/Attendance.astro';
 import TaskManagement from '../components/vectors/TaskManagement.astro';
 import Timesheet from '../components/vectors/Timesheet.astro';
+import Star from '../components/vectors/Star.astro'
 
 import SmartphoneHand from '../components/vectors/SmartphoneHand.astro';
 import Mindfull from '../components/vectors/Mindfull.astro'
 import Scale from '../components/vectors/Scale.astro'
 import TeamPerformance from '../components/vectors/TeamPerformance.astro'
 import Payroll from '../components/vectors/Payroll.astro'
+
+import { Image } from "astro:assets"
+import BSCAA from "../assets/clients/BSCAA.png"
+import Capterra from "../assets/clients/Capterra.png"
+import FM from "../assets/clients/FM.png"
+import Inclean from "../assets/clients/Inclean.png"
+import ISSACleaning from "../assets/clients/ISSA-Cleaning.png"
+import ProCleaningAcademy from "../assets/clients/Professional-Cleaning-Academy.png"
+import Soway from "../assets/clients/Soway.png"
 ---
 
 <Layout title="FreshOps - Scale your cleaning business by automating scheduling.">
@@ -317,42 +329,153 @@ import Payroll from '../components/vectors/Payroll.astro'
     </section>
 
     <section class="testimonials">
-        <div class="base_width">
-            <h2>What they say about <b>FreshOps</b></h2>
-			<script>
-				import "../scripts/tiny-slider.js"
-				import "../styles/tiny-slider.css"
-			</script>
-            
-			<div class="ctnr">
-				<div class="slider">
-                    <div class="box">
-                        <div class="ctnr">
-                            <div class="box_ctnr">
-                                <div class="profile">
-                                    <img src="" alt=""/>
+        <h2>What they say about <b>FreshOps</b></h2>
+        
+        <script>
+            import "../scripts/tiny-slider.js"
+            import "../styles/tiny-slider.css"
+        </script>
 
-                                    <div class="flex">
-                                        <p class="name"></p>
-
-                                        <p class="description"></p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="content">
-
-                                <p class="heading"></p>
-                                
-                                <blockquote>
-                                </blockquote>
-
-                                <div class="gradient"></div>
-                            </div>
-                        </div>
+        <div class="slider">
+            <div class="box">
+                <div class="ctnr">
+                    <img class="photo" src="" alt="s avatar"/>
+    
+                    <div class="content">
+                        <blockquote>
+                                <p>"I've never felt more in control of my operations. freshOps has been a game-changer for my cleaning business."</p>
+                        </blockquote>
+                        
+                        <p class="author">Jane D., Manchester</p>
                     </div>
-				</div>
-			</div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="ctnr">
+                    <img class="photo" src="" alt="s avatar"/>
+    
+                    <div class="content">
+                        <blockquote>
+                                <p>"I've never felt more in control of my operations. freshOps has been a game-changer for my cleaning business."</p>
+                        </blockquote>
+                        
+                        <p class="author">Jane D., Manchester</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="ctnr">
+                    <img class="photo" src="" alt="s avatar"/>
+    
+                    <div class="content">
+                        <blockquote>
+                                <p>"I've never felt more in control of my operations. freshOps has been a game-changer for my cleaning business."</p>
+                        </blockquote>
+                        
+                        <p class="author">Jane D., Manchester</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clients">
+            <Image src={BSCAA} alt="BSCAA" draggable="false"/>
+            <Image src={Capterra} alt="Capterra" draggable="false"/>
+            <Image src={FM} alt="FM" draggable="false"/>
+            <Image src={Inclean} alt="Inclean" draggable="false"/>
+            <Image src={ISSACleaning} alt="ISSA Cleaning" draggable="false"/>
+            <Image src={ProCleaningAcademy} alt="Professional Cleaning Academy" draggable="false"/>
+            <Image src={Soway} alt="Soway" draggable="false"/>
+        </div>
+
+        <div class="ranks">
+            <div class="rank">
+                <div class="stars">
+                    <Star/>
+                    <Star/>
+                    <Star/>
+                    <Star/>
+                    <Star/>
+                </div>
+
+                <p>SaaSReview.co.uk</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Discover Our Plans</h2>
+
+        <div class="plans reveal">
+            <div class="plan basic">
+                <h3>Basic</h3>
+                <p class="subheading">Suitable for the simplest needs</p>
+                <hr>
+
+                <div class="bullets">
+                    <p>Lorem ipsum dolor sit</p>
+                    <hr>
+                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                    <hr>
+                    <p>tempor incididunt ut labore et dolore magna</p>
+                    <hr>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+                
+                <a href="/contact/" class="cta">Sign up now</a>
+            </div>
+
+            <div class="plan premium">
+                <h3>Premium</h3>
+                <p class="subheading">Suitable for the simplest needs</p>
+                <hr>
+
+                <div class="bullets">
+                    <p>Lorem ipsum dolor sit</p>
+                    <hr>
+                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                    <hr>
+                    <p>tempor incididunt ut labore et dolore magna</p>
+                    <hr>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+                
+                <a href="/contact/" class="cta">Sign up now</a>
+            </div>
+
+            <div class="plan enterprise">
+                <h3>Enterprise</h3>
+                <p class="subheading">Suitable for the simplest needs</p>
+                <hr>
+
+                <div class="bullets">
+                    <p>Lorem ipsum dolor sit</p>
+                    <hr>
+                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                    <hr>
+                    <p>tempor incididunt ut labore et dolore magna</p>
+                    <hr>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+                </div>
+                
+                <a href="/contact/" class="cta">Sign up now</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact_sec_ctnr">
+        <ContactSection/>
+    </div>
+
+    <section class="presentation">
+        <div class="base_width">
+            <h2>How <b>FreshOps revamped operations</b> at a renowned London commercial space.</h2>
+
+            <p>The challenges faced, solutions provided by freshOps, and the astounding results achieved.</p>
+
+            <div class="video_ctnr"></div>
         </div>
     </section>
 </Layout>

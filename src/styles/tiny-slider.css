@@ -1,7 +1,7 @@
 .tns-outer {
     padding: 0 !important;
     position: relative;
-    z-index: 3;
+    z-index: 1;
 }
 
 .tns-outer [hidden] {
@@ -53,6 +53,10 @@
     left: 0
 }
 
+.tns-nav {
+    display: none;
+}
+
 .tns-gallery {
     position: relative;
     left: 0;
@@ -96,24 +100,25 @@
     margin: 2rem auto 0;
     right: 0;
     left: 0;
-    z-index: 3;
+    z-index: 1;
 }
 
 .tns-controls button {
-    background-color: var(--primary);
+    background-color: var(--c3);
     font-size: 1.8rem;
-    border-radius: 0.4rem;
+    border-radius: 10rem;
     font-weight: 800;
     color: var(--light);
-    width: clamp(3.5rem, 12vw, 5rem);
-    height: clamp(3.5rem, 4vw, 5rem);
-    z-index: 3;
-    border: 0.1rem solid var(--primary);
+    width: clamp(3.5rem, 15vw, 5rem);
+    height: clamp(3.5rem, 15vw, 5rem);
+    z-index: 1;
+    border: 0.2rem solid var(--light);
+    line-height: 1;
 }
 
 .tns-controls button[disabled] {
-    background-color: var(--light-a);
-    color: var(--light-b);
+    background-color: var(--light-b);
+    color: var(--light);
     cursor: default;
     border: 0.1rem solid var(--light-b);
 }
@@ -213,26 +218,19 @@
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
-        height: 20rem;
-        width: clamp(3.5rem, 7vw, 8rem);
-        z-index: 4;
+        z-index: 1;
     }
 
     .tns-controls button:first-of-type {
-        left: calc((100vw - var(--base-width)) / 2);
+        left: calc((100vw - var(--width-1)) / 2);
     }
     
     .tns-controls button:last-of-type {
-        right: calc((100vw - var(--base-width)) / 2);
+        right: calc((100vw - var(--width-1)) / 2);
     }
 
     .tns-controls button {
-        background-color:var(--primary);
-        border-radius: 0.8rem;
-        -webkit-border-radius: 0.8rem;
-        -moz-border-radius: 0.8rem;
-        -ms-border-radius: 0.8rem;
-        -o-border-radius: 0.8rem;
+        background-color:var(--c3);
         transition: background-color 0.3s ease;
         -webkit-transition: background-color 0.3s ease;
         -moz-transition: background-color 0.3s ease;
@@ -241,7 +239,7 @@
     }
 
     .tns-controls button:not([disabled]):hover {
-        background-color:var(--primary-b);
+        background-color:var(--c3-a);
         transition: background-color 0.1s ease;
         -webkit-transition: background-color 0.1s ease;
         -moz-transition: background-color 0.1s ease;

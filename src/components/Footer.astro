@@ -1,0 +1,188 @@
+---
+
+import Instagram from "./vectors/Instagram.astro";
+import Twitter from "./vectors/Twitter.astro";
+import LinkedIn from "./vectors/LinkedIn.astro";
+
+---
+
+<footer>
+    <div class="base_width">
+        <div class="content">
+            <a href="/" class="logo">
+                <img src="/logo/logo.png" alt="FreshOps Logo" draggable="false">
+            </a>
+            
+            <p>Simplify operations. Amplify results. Scale your commercial cleaning business.</p>
+        </div>
+
+        <nav>
+            <a href="#pricing"><span></span>Pricing</a>
+            <a href="#features"><span></span>Features</a>
+            <a href="/contact/"><span></span>Contact</a>
+            <a href="/privacy-policy/"><span></span>Privacy Policy</a>
+            <a href="/terms-of-service/"><span></span>Terms of Service</a>
+        </nav>
+
+        <div>
+            <div class="nap_data">
+                <a href="mailto:help@freshops.uk">help@freshops.uk</a>
+                <a href="tel:+4420XXXXXXXX">+44 20 XXXX XXXX</a>
+                <p>London, UK</p>
+                <p>United Kingdom</p>
+                <p></p>
+            </div>
+
+            <hr>
+            
+            <div class="social">
+                <a href="#" class="instagram icon">
+                    <Instagram/>
+                </a>
+                <a href="#" class="twitter icon">
+                    <Twitter/>
+                </a>
+                <a href="#" class="linkedin icon">
+                    <LinkedIn/>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background-color: var(--dark);
+        color: var(--light);
+        padding: clamp(4rem,19vw,12rem) 0;
+        font-size: clamp(1rem,3.9vmin,1.7rem);
+        line-height: 1.5;
+        border-radius: 10rem 0 0 0;
+    }
+
+    footer > .base_width {
+        display: flex;
+        flex-flow: row wrap;
+        gap: clamp(3rem,10vw,18rem);
+    }
+
+    footer .content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        flex: 1;
+    }
+
+    footer .logo {
+        width: clamp(10rem, 50vw, 25rem);
+        display: block;
+    }
+
+    footer .logo img {
+        object-fit: contain;
+    }
+
+    footer .content p {
+        max-width: 38rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+        letter-spacing: 0.05rem;
+    }
+
+    footer .legal {
+        font-style: italic;
+        color: var(--light-b);
+        font-weight: 400;
+    }
+
+    footer nav {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1.2rem 2rem;
+        align-content: start;
+    }
+
+    footer nav a {
+        display: flex;
+        align-items: center;
+        gap:1rem;
+        font-weight: 300;
+        letter-spacing: 0.06rem;
+    }
+
+    footer nav a span {
+        display: block;
+        border-bottom: 0.5rem solid var(--grey);
+        border-right: 0.5rem solid var(--grey);
+        border-top: 0.5rem solid transparent;
+        border-left: 0.5rem solid transparent;
+        transform: rotate(-45deg);
+        transition: border 0.4s ease;
+    }
+
+    footer nav a:hover span {
+        border-bottom: 0.5rem solid var(--c1);
+        border-right: 0.5rem solid var(--c1);
+        transition: border 0s ease;
+    }
+
+    .nap_data {
+        font-weight: 400;
+        font-size: 0.9em;
+        letter-spacing: 0.1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        color: var(--light-a);
+    }
+
+    .nap_data a, .nap_data p {
+        opacity: 0.6;
+    }
+
+    .nap_data a {
+        transition: opacity 0.4s ease;
+    }
+
+    .nap_data a:hover {
+        opacity: 1;
+        transition: opacity 0s ease;
+    }
+
+    hr {
+        width: 2rem;
+        margin: 2rem 0;
+        height: 0.2rem;
+        background-color: rgb(248 248 255 / 10%);
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .social a.icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+
+
+    
+	@media screen and (min-width: 850px) {
+
+        footer nav {
+            flex-direction: column;
+        }
+
+        footer .content {
+            max-width: 40vw;
+        }
+
+        footer .legal {
+            margin-top: 2rem;
+        }
+
+    }
+</style>
