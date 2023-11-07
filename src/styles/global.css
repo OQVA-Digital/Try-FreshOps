@@ -30,7 +30,7 @@ html.sr .reveal, html.sr .reveal_steps1,  html.sr .reveal_steps2 {
 
     --roulette-size:clamp(25rem, 25vw, 30rem);
 
-    --testimonial-width:clamp(15rem, 81vw, 100rem);
+    --testimonial-width:clamp(15rem, 75vw, 100rem);
 }
 
 .base_width {
