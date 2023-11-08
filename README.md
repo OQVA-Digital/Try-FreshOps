@@ -1,4 +1,4 @@
-# Try-FreshOps
+# Try-freshOps
 
 ## https://venerable-duckanoo-7d9ffa.netlify.app/
 
