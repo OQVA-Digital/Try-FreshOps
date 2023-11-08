@@ -1,7 +1,7 @@
 
 
 	section.contact {
-    	padding: 3rem 0;
+    	padding: 5rem 0;
     	scroll-margin: clamp(1rem,16vmin,7.5rem);
         background-color: var(--c1);
         position:relative;
@@ -13,7 +13,7 @@
         max-width: 70rem;
         margin-inline: auto;
         background-color: var(--light);
-        padding: clamp(3rem,9vw,5rem) clamp(2rem,8vw,6rem);
+        padding: clamp(3rem,9vw,4rem) clamp(2rem,8vw,6rem);
         box-sizing: border-box;
         box-shadow: 0 0rem 5rem 1rem var(--c1-a);
         border: 0.1rem solid var(--light-a);
@@ -35,6 +35,45 @@
         font-size: clamp(1.4rem,3.5vmin,1.7rem);
         color: var(--grey);
     }
+
+    .overflow_ctnr {
+        position: absolute;
+        inset: 0;
+        top:-10rem;
+        bottom:-10rem;
+        overflow: hidden;
+        z-index: -1;
+    }
+
+    .scale_ctnr {
+        width: var(--roulette-size);
+        height: var(--roulette-size);
+        transform: scale(2.8);
+        -webkit-transform: scale(2.8);
+        -moz-transform: scale(2.8);
+        -ms-transform: scale(2.8);
+        -o-transform: scale(2.8);
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        margin: auto;
+}
+
+    .gradient_cone {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-inline: auto;
+        left: 0;
+        right: 0;
+        background-image: conic-gradient(rgba(255,255,255,0),rgba(255,255,255,0.12));
+        animation: spin 4s linear infinite;
+        -webkit-animation: spin 4s linear infinite;
+}
 
 
     /* Form defaults */

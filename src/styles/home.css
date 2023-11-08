@@ -55,8 +55,23 @@ h1 span {
 .intro .cta {
     background-color: var(--dark);
     color: var(--c1);
-    border: 0.1rem solid var(--c2);
+    border: 0.2rem solid var(--c2);
     font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+    -moz-transition: background-color 0.3s ease, color 0.3s ease;
+    -ms-transition: background-color 0.3s ease, color 0.3s ease;
+    -o-transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.intro .cta:hover {
+    background-color: var(--dark-a);
+    color: var(--c1-a);
+    transition: background-color 0s ease, color 0s ease;
+    -webkit-transition: background-color 0s ease, color 0s ease;
+    -moz-transition: background-color 0s ease, color 0s ease;
+    -ms-transition: background-color 0s ease, color 0s ease;
+    -o-transition: background-color 0s ease, color 0s ease;
 }
 
 .roulette {
@@ -587,6 +602,7 @@ section.features h2 {
     font-size: clamp(1.5rem, 5vw, 2.8rem);
     margin-inline: auto;
     font-weight: 700;
+    line-height: 1.2;
 }
 
 section.features h2 b {
@@ -598,7 +614,7 @@ section.features h2 b {
 .features .base_width {
     display: flex;
     flex-direction: column;
-    gap: 6rem;
+    gap: clamp(6rem, 4vw, 8rem);
 }
 
 .features ul {
@@ -619,6 +635,7 @@ section.features h2 b {
     -o-border-radius: 50%;
     position: relative;
     scroll-margin-top: 30vh;
+    box-shadow: 0 1rem 3rem #cbdaff;
 }
 
 .features li:not(:last-child):after {
@@ -961,7 +978,7 @@ section:not(.intro).pricing h2 {
 }
 
 .plans .plan {
-    padding: clamp(3rem, 9vw, 7rem) 3rem;
+    padding: clamp(3rem, 11vw, 7rem) 3rem 5rem;
     border-radius: 20rem 20rem 9rem 9rem;
     -webkit-border-radius: 20rem 20rem 9rem 9rem;
     -moz-border-radius: 20rem 20rem 9rem 9rem;
@@ -974,17 +991,19 @@ section:not(.intro).pricing h2 {
     min-width: clamp(15rem, 59vw, 28rem);
     width: clamp(15rem, 59vw, 28rem);
     scroll-snap-align: center;
-    border: 0.4rem solid;
-    transition: transform 0.4s ease;
-    -webkit-transition: transform 0.4s ease;
-    -moz-transition: transform 0.4s ease;
-    -ms-transition: transform 0.4s ease;
-    -o-transition: transform 0.4s ease;
+    border: 0.2rem solid var(--light);
+    transition: transform 0.4s ease, filter 0.4s ease;
+    -webkit-transition: transform 0.4s ease, filter 0.4s ease;
+    -moz-transition: transform 0.4s ease, filter 0.4s ease;
+    -ms-transition: transform 0.4s ease, filter 0.4s ease;
+    -o-transition: transform 0.4s ease, filter 0.4s ease;
     transform: translateY(0rem);
     -webkit-transform: translateY(0rem);
     -moz-transform: translateY(0rem);
     -ms-transform: translateY(0rem);
     -o-transform: translateY(0rem);
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
 }
 
 .plans .plan:hover {
@@ -993,11 +1012,13 @@ section:not(.intro).pricing h2 {
     -moz-transform: translateY(-1rem);
     -ms-transform: translateY(-1rem);
     -o-transform: translateY(-1rem);
-    transition: transform 0.2s ease;
-    -webkit-transition: transform 0.2s ease;
-    -moz-transition: transform 0.2s ease;
-    -ms-transition: transform 0.2s ease;
-    -o-transition: transform 0.2s ease;
+    filter: brightness(1.06);
+    -webkit-filter: brightness(1.06);
+    transition: transform 0.2s ease, filter 0.2s ease;
+    -webkit-transition: transform 0.2s ease, filter 0.2s ease;
+    -moz-transition: transform 0.2s ease, filter 0.2s ease;
+    -ms-transition: transform 0.2s ease, filter 0.2s ease;
+    -o-transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .plan h3 {
@@ -1048,19 +1069,24 @@ section:not(.intro).pricing h2 {
     border-radius: 1rem;
 }
 
+.plan:not(.basic) .bullets hr {
+    opacity: 0.3;
+}
+
 .plans .cta {
     font-weight: 600;
+    border: 0.3rem solid var(--light-b);
 }
 
 .plan.basic .cta {
     background-color: var(--c3);
     background-image: linear-gradient(25deg, var(--c3) 50%, var(--c3-a));
     color:var(--light);
+    border-color: var(--light);
 }
 
 .plan.basic {
     background-color: var(--light-b);
-    border-color: #cedbff;
 }
 
 .plan.basic .subheading, .plan.premium .subheading {
@@ -1070,14 +1096,12 @@ section:not(.intro).pricing h2 {
 .plan.premium {
     background-color: var(--c1);
     background-image: linear-gradient(200deg, var(--c2) 0%, var(--c1) 70%);
-    border-color: var(--c1);
 }
 
 .plan.enterprise {
     background-color: var(--c3);
     background-image: linear-gradient(25deg, var(--c3) 50%, var(--c3-a));
     color: var(--light);
-    border-color: var(--c3);
 }
 
 .plan.premium .cta, .plan.enterprise .cta {
@@ -1161,6 +1185,10 @@ section:not(.intro).presentation h2 {
     -ms-border-radius: clamp(2rem, 6vw, 5rem);
     -o-border-radius: clamp(2rem, 6vw, 5rem);
     opacity: 0.3;
+}
+
+.presentation h2::before {
+    margin-bottom: 2rem;
 }
 
 

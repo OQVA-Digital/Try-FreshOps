@@ -16,9 +16,9 @@
                 <a href="/contact/">Contact</a>
             </div>
             
-            <a href="/contact/" class="main cta"><span>Try freshOps for Free</span></a>
+            <a href="/contact/" class="main cta"><span>Try freshOps</span></a>
 
-            <svg class="corner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.5 100.5"><defs><style>.cls-1{fill:#fff;stroke-width:0px;}</style></defs><path class="cls-1" d="m100.5,0H0v100.5C0,44.99,44.99,0,100.5,0Z"/></svg>
+            <svg class="corner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.5 100.5"><path style="fill:#fff;stroke-width:0px;" d="m100.5,0H0v100.5C0,44.99,44.99,0,100.5,0Z"/></svg>
         </nav>
 
         <button class="hambt" type="button" aria-label="Open navigation menu">
@@ -30,21 +30,22 @@
         </button>
     </div>
 
-    <svg class="corner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.5 100.5"><defs><style>.cls-1{fill:#fff;stroke-width:0px;}</style></defs><path class="cls-1" d="m100.5,0H0v100.5C0,44.99,44.99,0,100.5,0Z"/></svg>
+    <svg class="corner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.5 100.5"><path style="fill:rgba(255,255,255,0.8);stroke-width:0px;" d="m100.5,0H0v100.5C0,44.99,44.99,0,100.5,0Z"/></svg>
 </header>
 
 <style>
     header {
-        height:var(--header-height);
+        height: var(--header-height);
         display: flex;
         justify-content: center;
-        border-radius: 0 0 clamp(3rem, 10vw, 6rem) 0;
-        background-color: var(--light);
+        border-radius: 0 0 clamp(3rem,10vw,6rem) 0;
+        background-color: rgb(255 255 255 / 85%);
         position: fixed;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         right: 0;
         z-index: 2;
+        backdrop-filter: blur(0.3rem);
     }
 
     header > .corner {
@@ -132,7 +133,7 @@
         border-radius: 5rem;
         position: relative;
         color: var(--grey);
-        padding: clamp(0.7rem,3.5vw,1.4rem) clamp(1.6rem,7vw,3.3rem);
+        padding: clamp(0.7rem,3.5vw,1.4rem) clamp(1.6rem,11vw,4rem) clamp(0.7rem,3.5vw,1.4rem) clamp(1.6rem,7vw,3.3rem);
         font-size: inherit;
     }
 
@@ -229,6 +230,10 @@
 
         nav, nav > .ctnr {
             flex-direction: row;
+        }
+
+        nav .corner {
+            display: none;
         }
     }
 </style>
