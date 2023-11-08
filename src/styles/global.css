@@ -4,7 +4,7 @@ html.sr .reveal, html.sr .reveal_steps1,  html.sr .reveal_steps2 {
 
 :root {
     --light:#fff;
-    --light-a:#eef2dd;
+    --light-a:#F3F7E2;
     --light-b:#d7e2ff;
 
     --dark:#12281d;
@@ -239,7 +239,7 @@ noscript {
     -moz-border-radius: 5rem;
     -ms-border-radius: 5rem;
     -o-border-radius: 5rem;
-    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    font-size: clamp(1.5rem, 3.8vw, 1.8rem);
     text-align: center;
     width: fit-content;
     padding: clamp(0.7rem, 3vw, 1.4rem) clamp(1.6rem, 8vw, 4rem) clamp(0.7rem, 3vw, 1.4rem) clamp(1.6rem, 5vw, 3.6rem);

@@ -209,11 +209,11 @@ h1 span {
     position: absolute;
     opacity: 0;
     visibility: hidden;
-    transform: translateX(-2rem) scale(0.95);
-    -webkit-transform: translateX(-2rem) scale(0.95);
-    -moz-transform: translateX(-2rem) scale(0.95);
-    -ms-transform: translateX(-2rem) scale(0.95);
-    -o-transform: translateX(-2rem) scale(0.95);
+    transform: translate(0, -2rem) scale(0.95);
+    -webkit-transform: translate(0, -2rem) scale(0.95);
+    -moz-transform: translate(0, -2rem) scale(0.95);
+    -ms-transform: translate(0, -2rem) scale(0.95);
+    -o-transform: translate(0, -2rem) scale(0.95);
     transition: opacity 0.6s ease, visibility 0.6s ease, transform 0.6s ease;
     -webkit-transition: opacity 0.6s ease, visibility 0.6s ease, transform 0.6s ease;
     -moz-transition: opacity 0.6s ease, visibility 0.6s ease, transform 0.6s ease;
@@ -224,11 +224,11 @@ h1 span {
 .intro .descriptions .bullet.show {
     opacity: 1;
     visibility: visible;
-    transform: translateX(0) scale(1);
-    -webkit-transform: translateX(0) scale(1);
-    -moz-transform: translateX(0) scale(1);
-    -ms-transform: translateX(0) scale(1);
-    -o-transform: translateX(0) scale(1);
+    transform: translate(0, 0) scale(1);
+    -webkit-transform: translate(0, 0) scale(1);
+    -moz-transform: translate(0, 0) scale(1);
+    -ms-transform: translate(0, 0) scale(1);
+    -o-transform: translate(0, 0) scale(1);
 }
 
 .intro .descriptions .icon {
@@ -1027,6 +1027,10 @@ section:not(.intro).pricing h2 {
     font-weight: 700;
 }
 
+.plan.enterprise h3 {
+    font-weight: 600;
+}
+
 .plan .subheading {
     font-size: 1.7rem;
     font-weight: 700;
@@ -1050,6 +1054,10 @@ section:not(.intro).pricing h2 {
 .plan .bullets p {
     font-size: clamp(1.5rem, 4vw, 1.6rem);
     font-weight: 600;
+}
+
+.plan.enterprise .bullets p {
+    font-weight: 500;
 }
 
 .plan > hr {
@@ -1286,7 +1294,12 @@ section:not(.intro).presentation h2 {
     .intro .descriptions .bullet  {
         text-align: left;
         align-items: baseline;
-    }
+        transform: translate(-2rem, 0) scale(0.95);
+        -webkit-transform: translate(-2rem, 0) scale(0.95);
+        -moz-transform: translate(-2rem, 0) scale(0.95);
+        -ms-transform: translate(-2rem, 0) scale(0.95);
+        -o-transform: translate(-2rem, 0) scale(0.95);
+}
 
     .plans {
         justify-content: center;
