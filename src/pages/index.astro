@@ -19,6 +19,9 @@ import TeamPerformance from '../components/vectors/TeamPerformance.astro'
 import Payroll from '../components/vectors/Payroll.astro'
 
 import { Image } from "astro:assets"
+
+import Symbol from '../assets/logo/symbol.png'
+
 import BSCAA from "../assets/clients/BSCAA.png"
 import Capterra from "../assets/clients/Capterra.png"
 import FM from "../assets/clients/FM.png"
@@ -28,7 +31,7 @@ import ProCleaningAcademy from "../assets/clients/Professional-Cleaning-Academy.
 import Soway from "../assets/clients/Soway.png"
 ---
 
-<Layout title="freshOps - Scale your cleaning business by automating scheduling.">
+<Layout title="freshOps - Scale your cleaning business by automating scheduling." description="Scale your cleaning business by automating scheduling.">
     <section class="intro">
         <div class="base_width">
             <div class="content reveal">
@@ -53,7 +56,7 @@ import Soway from "../assets/clients/Soway.png"
                         </div>
 
                         <div class="center reveal_steps2">
-                            <img src="/logo/symbol.png" alt="freshOps Symbol">
+                            <Image src={Symbol} alt="freshOps Symbol" draggable="false"/>
                         </div>
 
                         <div class="icons">
@@ -172,7 +175,7 @@ import Soway from "../assets/clients/Soway.png"
                         </div>
     
                         <div class="content">
-                            <h4>1. Full Operational Control</h4>
+                            <h3>1. Full Operational Control</h3>
     
                             <p>Manage your team better by knowing when the arrive and depart site, if they are late to site or onsite now.</p>
                         </div>
@@ -187,7 +190,7 @@ import Soway from "../assets/clients/Soway.png"
                         </div>
 
                         <div class="content">
-                            <h4>2. Ultimate Peace of Mind</h4>
+                            <h3>2. Ultimate Peace of Mind</h3>
 
                             <p>Eliminate guesswork and build trust with transparent, real-time updates. Know exactly when, where, and how your team is performing.</p>
                         </div>
@@ -202,7 +205,7 @@ import Soway from "../assets/clients/Soway.png"
                         </div>
 
                         <div class="content">
-                            <h4>3. Scale with Ease</h4>
+                            <h3>3. Scale with Ease</h3>
                             
                             <p>With streamlined processes and insights, grow your business confidently and efficiently.</p>
                         </div>
@@ -217,7 +220,7 @@ import Soway from "../assets/clients/Soway.png"
                         </div>
 
                         <div class="content">
-                            <h4>4. Enhance Team Performance</h4>
+                            <h3>4. Enhance Team Performance</h3>
 
                             <p>Empower your cleaners with clear guidelines, feedback, and recognition, fostering a culture of excellence.</p>
                         </div>
@@ -232,7 +235,7 @@ import Soway from "../assets/clients/Soway.png"
                         </div>
 
                         <div class="content">
-                            <h4>5. Seamless Payroll & Reporting</h4>
+                            <h3>5. Seamless Payroll & Reporting</h3>
 
                             <p>Say goodbye to tedious timesheet management. Experience smooth payroll processes and accurate financial reporting.</p>
                         </div>
@@ -244,7 +247,7 @@ import Soway from "../assets/clients/Soway.png"
         </div>
     </section>
     
-    <section class="features" id="features">
+    <section class="features reveal" id="features">
         <svg class="curve start" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 607.13 20"><path d="m307.64,0C158.92,0,6.49,19.17,0,20h607.13c-5.89-.79-150.62-20-299.49-20Z"/></svg>
 
         <div class="base_width">

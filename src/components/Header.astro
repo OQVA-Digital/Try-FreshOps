@@ -1,11 +1,14 @@
 ---
 
+import { Image } from "astro:assets"
+import Logo from '../assets/logo/logo.png'
+
 ---
 
 <header>
     <div class="base_width">
         <a href="/" class="logo">
-            <img src="/logo/logo.png" alt="freshOps Logo" draggable="false">
+            <Image src={Logo} alt="freshOps Logo" alt="freshOps Logo" draggable="false"/>
         </a>
 
         <nav>

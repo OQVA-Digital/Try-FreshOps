@@ -4,13 +4,17 @@ import Instagram from "./vectors/Instagram.astro";
 import Twitter from "./vectors/Twitter.astro";
 import LinkedIn from "./vectors/LinkedIn.astro";
 
+
+import { Image } from "astro:assets"
+import Logo from '../assets/logo/logo.png'
+
 ---
 
 <footer>
     <div class="base_width">
         <div class="content">
             <a href="/" class="logo">
-                <img src="/logo/logo.png" alt="freshOps Logo" draggable="false">
+                <Image src={Logo} alt="freshOps Logo" draggable="false"/>
             </a>
             
             <p>Simplify operations. Amplify results. Scale your commercial cleaning business.</p>
@@ -36,13 +40,13 @@ import LinkedIn from "./vectors/LinkedIn.astro";
             <hr>
             
             <div class="social">
-                <a href="#" class="instagram icon">
+                <a href="#" class="instagram icon" aria-label="Instagram link">
                     <Instagram/>
                 </a>
-                <a href="#" class="twitter icon">
+                <a href="#" class="twitter icon" aria-label="Twitter link">
                     <Twitter/>
                 </a>
-                <a href="#" class="linkedin icon">
+                <a href="#" class="linkedin icon" aria-label="LinkedIn link">
                     <LinkedIn/>
                 </a>
             </div>
