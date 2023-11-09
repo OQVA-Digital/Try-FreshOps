@@ -241,7 +241,7 @@ noscript {
     -moz-border-radius: 5rem;
     -ms-border-radius: 5rem;
     -o-border-radius: 5rem;
-    font-size: clamp(1.5rem, 3.8vw, 1.8rem);
+    font-size: clamp(1.5rem, 3.8vw, 1.6rem);
     text-align: center;
     width: fit-content;
     padding: clamp(0.7rem, 3vw, 1.4rem) clamp(1.6rem, 10vw, 5rem) clamp(0.7rem, 3vw, 1.4rem) clamp(1.6rem, 5vw, 3.6rem);

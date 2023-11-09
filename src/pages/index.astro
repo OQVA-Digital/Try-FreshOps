@@ -354,7 +354,7 @@ const testimonials = await getCollection("testimonials");
                                             <p set:html={testimonials.data.quoteText}></p>
                                     </blockquote>
                                     
-                                    <p class="author">Jane D., Manchester</p>
+                                    <p class="author">{testimonials.data.author}</p>
                                 </div>
                             </div>
                         </div>
@@ -392,40 +392,68 @@ const testimonials = await getCollection("testimonials");
         <h2>Discover Our Plans</h2>
 
         <div class="plans reveal">
-            <div class="plan basic">
-                <h3>Basic</h3>
+            <div class="plan accelerator">
+                <h3>Accelerator</h3>
                 <p class="subheading">Suitable for the simplest needs</p>
                 <hr>
 
                 <div class="bullets">
-                    <p>Lorem ipsum dolor sit</p>
+                    <p>Includes 250 Shifts</p>
                     <hr>
-                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                    <p>Standard Features</p>
                     <hr>
-                    <p>tempor incididunt ut labore et dolore magna</p>
+                    <p>First 20 Tags Complimentary</p>
                     <hr>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <p>Online Onboarding Session</p>
+                    <hr>
+                    <p>1hr Online Support/Month</p>
                 </div>
                 
-                <a href="/contact/" class="cta">Sign up now</a>
+                <a href="/contact/" class="cta">Learn More</a>
             </div>
 
-            <div class="plan premium">
-                <h3>Premium</h3>
+            <div class="plan premier">
+                <h3>Premier</h3>
                 <p class="subheading">Suitable for the highest needs</p>
                 <hr>
 
                 <div class="bullets">
-                    <p>Lorem ipsum dolor sit</p>
+                    <p>Includes 500 Shifts</p>
                     <hr>
-                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                    <p>Standard Features</p>
                     <hr>
-                    <p>tempor incididunt ut labore et dolore magna</p>
+                    <p>First 20 Tags Complimentary</p>
                     <hr>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <p>Payroll – Xero Integration</p>
+                    <hr>
+                    <p>2 Online Onboarding Sessions</p>
+                    <hr>
+                    <p>2hrs Online Support/Month</p>
                 </div>
                 
-                <a href="/contact/" class="cta">Sign up now</a>
+                <a href="/contact/" class="cta">Learn More</a>
+            </div>
+
+            <div class="plan master">
+                <h3>Master</h3>
+                <p class="subheading">Suitable for bigger businesses</p>
+                <hr>
+
+                <div class="bullets">
+                    <p>Includes 750 Shifts</p>
+                    <hr>
+                    <p>Standard Features</p>
+                    <hr>
+                    <p>First 20 Tags Complimentary</p>
+                    <hr>
+                    <p>Payroll – Xero Integration</p>
+                    <hr>
+                    <p>4 Online Onboarding Sessions</p>
+                    <hr>
+                    <p>4hrs Online Support/Month</p>
+                </div>
+                
+                <a href="/contact/" class="cta">Learn More</a>
             </div>
 
             <div class="plan enterprise">
@@ -434,16 +462,22 @@ const testimonials = await getCollection("testimonials");
                 <hr>
 
                 <div class="bullets">
-                    <p>Lorem ipsum dolor sit</p>
+                    <p>Includes 750 Shifts PLUS $0.10 for all additional shifts</p>
                     <hr>
-                    <p>consectetur adipiscing elit, sed do eiusmod</p>
+                    <p>Standard Features</p>
                     <hr>
-                    <p>tempor incididunt ut labore et dolore magna</p>
+                    <p>freshOps Tags Included^</p>
                     <hr>
-                    <p>Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    <p>Payroll – Xero Integration</p>
+                    <hr>
+                    <p>Priority Online Onboarding Sessions</p>
+                    <hr>
+                    <p>Priority Online Support/Month</p>
+                    <hr>
+                    <p>Dedicated Account & Support Manager</p>
                 </div>
                 
-                <a href="/contact/" class="cta">Sign up now</a>
+                <a href="/contact/" class="cta">Enquire Today</a>
             </div>
         </div>
     </section>

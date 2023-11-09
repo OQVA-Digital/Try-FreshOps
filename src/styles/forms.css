@@ -108,9 +108,9 @@
         font-size: 1.6rem;
     }
 
-    input,
-    textarea,
-    select {
+    .contact input,
+    .contact textarea,
+    .contact select {
         padding: clamp(0.8rem, 2vw, 1.2rem) clamp(0.8rem, 2vw, 2.2rem);
         border-radius: 0.6rem;
         border: unset;

@@ -359,19 +359,19 @@ h1 span {
 }
 
 .roulette .icons button:nth-child(3) {
-    transform: translate(calc(var(--roulette-size) / 3), calc(var(--roulette-size) / 2.7));
-    -webkit-transform: translate(calc(var(--roulette-size) / 3), calc(var(--roulette-size) / 2.7));
-    -moz-transform: translate(calc(var(--roulette-size) / 3), calc(var(--roulette-size) / 2.7));
-    -ms-transform: translate(calc(var(--roulette-size) / 3), calc(var(--roulette-size) / 2.7));
-    -o-transform: translate(calc(var(--roulette-size) / 3), calc(var(--roulette-size) / 2.7));
+    transform: translate(calc(var(--roulette-size) / 2.9), calc(var(--roulette-size) / 2.6));
+    -webkit-transform: translate(calc(var(--roulette-size) / 2.9), calc(var(--roulette-size) / 2.6));
+    -moz-transform: translate(calc(var(--roulette-size) / 2.9), calc(var(--roulette-size) / 2.6));
+    -ms-transform: translate(calc(var(--roulette-size) / 2.9), calc(var(--roulette-size) / 2.6));
+    -o-transform: translate(calc(var(--roulette-size) / 2.9), calc(var(--roulette-size) / 2.6));
 }
 
 .roulette .icons button:nth-child(4) {
-    transform: translate(calc(var(--roulette-size) / -3), calc(var(--roulette-size) / 2.7));
-    -webkit-transform: translate(calc(var(--roulette-size) / -3), calc(var(--roulette-size) / 2.7));
-    -moz-transform: translate(calc(var(--roulette-size) / -3), calc(var(--roulette-size) / 2.7));
-    -ms-transform: translate(calc(var(--roulette-size) / -3), calc(var(--roulette-size) / 2.7));
-    -o-transform: translate(calc(var(--roulette-size) / -3), calc(var(--roulette-size) / 2.7));
+    transform: translate(calc(var(--roulette-size) / -2.9), calc(var(--roulette-size) / 2.6));
+    -webkit-transform: translate(calc(var(--roulette-size) / -2.9), calc(var(--roulette-size) / 2.6));
+    -moz-transform: translate(calc(var(--roulette-size) / -2.9), calc(var(--roulette-size) / 2.6));
+    -ms-transform: translate(calc(var(--roulette-size) / -2.9), calc(var(--roulette-size) / 2.6));
+    -o-transform: translate(calc(var(--roulette-size) / -2.9), calc(var(--roulette-size) / 2.6));
 }
 
 .roulette .icons button:nth-child(5) {
@@ -973,9 +973,10 @@ section:not(.intro).pricing h2 {
     text-align: center;
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     gap: var(--corner-width);
     overflow-x: auto;
-    padding-inline: var(--corner-width);
+    padding-inline: calc(50vw - (clamp(15rem, 59vw, 23rem) / 1.5));
     scroll-snap-type: x mandatory;
     padding-block: 1rem 2rem;
 }
@@ -989,10 +990,9 @@ section:not(.intro).pricing h2 {
     -o-border-radius: 20rem 20rem 9rem 9rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    min-width: clamp(15rem, 59vw, 28rem);
-    width: clamp(15rem, 59vw, 28rem);
+    min-width: clamp(15rem, 59vw, 23rem);
+    width: clamp(15rem, 59vw, 23rem);
     scroll-snap-align: center;
     border: 0.2rem solid var(--light);
     transition: transform 0.4s ease, filter 0.4s ease;
@@ -1030,8 +1030,12 @@ section:not(.intro).pricing h2 {
     font-weight: 700;
 }
 
-.plan.enterprise h3 {
+.plan.premier h3, .plan.enterprise h3 {
     font-weight: 600;
+}
+
+.plan.enterprise h3{
+    color:var(--c1-a)
 }
 
 .plan .subheading {
@@ -1041,7 +1045,7 @@ section:not(.intro).pricing h2 {
     line-height: 1.2;
 }
 
-.plan.enterprise .subheading {
+.plan.premier .subheading, .plan.enterprise .subheading {
     font-weight: 500;
 }
 
@@ -1050,16 +1054,16 @@ section:not(.intro).pricing h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.6rem;
     margin-bottom: 4rem;
 }
 
 .plan .bullets p {
-    font-size: clamp(1.5rem, 4vw, 1.6rem);
+    font-size: clamp(1.4rem, 3.5vw, 1.5rem);
     font-weight: 600;
 }
 
-.plan.enterprise .bullets p {
+.plan.premier .bullets p, .plan.enterprise .bullets p {
     font-weight: 500;
 }
 
@@ -1069,8 +1073,16 @@ section:not(.intro).pricing h2 {
     display: block;
     margin-inline: auto;
     background-color: var(--light);
-    border-radius: 2rem;
     margin-block: clamp(2rem, 5vw, 3rem);
+    border-radius: 1.8rem;
+    -webkit-border-radius: 1.8rem;
+    -moz-border-radius: 1.8rem;
+    -ms-border-radius: 1.8rem;
+    -o-border-radius: 1.8rem;
+}
+
+.plan.enterprise > hr {
+    background-color: var(--c1);
 }
 
 .plan .bullets hr {
@@ -1080,7 +1092,7 @@ section:not(.intro).pricing h2 {
     border-radius: 1rem;
 }
 
-.plan:not(.basic) .bullets hr {
+.plan:not(.accelerator) .bullets hr {
     opacity: 0.3;
 }
 
@@ -1089,36 +1101,50 @@ section:not(.intro).pricing h2 {
     border: 0.3rem solid var(--light-b);
 }
 
-.plan.basic .cta {
+.plan.accelerator .cta {
     background-color: var(--c3);
     background-image: linear-gradient(25deg, var(--c3) 50%, var(--c3-a));
     color:var(--light);
     border-color: var(--light);
 }
 
-.plan.basic {
+.plan.accelerator {
     background-color: var(--light-b);
 }
 
-.plan.basic .subheading, .plan.premium .subheading {
+.plan.accelerator .subheading, .plan.master .subheading {
     color: var(--grey);
 }
 
-.plan.premium {
+.plan.master {
     background-color: var(--c1);
     background-image: linear-gradient(200deg, var(--c2) 0%, var(--c1) 70%);
 }
 
-.plan.enterprise {
+.plan.premier {
     background-color: var(--c3);
     background-image: linear-gradient(25deg, var(--c3) 50%, var(--c3-a));
     color: var(--light);
 }
 
-.plan.premium .cta, .plan.enterprise .cta {
+.plan.enterprise {
+    background-color: var(--dark);
+    color:var(--light);
+    border: 0.3rem solid var(--c1-a);
+}
+
+.plan.master .cta, .plan.premier .cta {
     background-color: var(--light);
     font-weight: 700;
     color:var(--grey)
+}
+
+.plan.enterprise .cta {
+    background-color: var(--c1);
+    background-image: linear-gradient(200deg, var(--c2) 0%, var(--c1) 70%);
+    border: unset;
+    color:var(--dark);
+    font-weight: 700;
 }
 
 
@@ -1302,13 +1328,17 @@ section:not(.intro).presentation h2 {
         -moz-transform: translate(-2rem, 0) scale(0.95);
         -ms-transform: translate(-2rem, 0) scale(0.95);
         -o-transform: translate(-2rem, 0) scale(0.95);
-}
-
-    .plans {
-        justify-content: center;
     }
 
     .features ul {
         row-gap: 2rem;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .plans {
+        flex: 1;
+        padding-inline: unset;
+        justify-content: center;
     }
 }
