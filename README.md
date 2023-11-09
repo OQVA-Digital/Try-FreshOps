@@ -1,6 +1,8 @@
 # Try-freshOps
+## https://freshops.info/
 
-## https://venerable-duckanoo-7d9ffa.netlify.app/
+## Development
+### https://venerable-duckanoo-7d9ffa.netlify.app/
 
-Deploy Statuses
-https://app.netlify.com/sites/venerable-duckanoo-7d9ffa/deploys
+### Deploy Statuses
+#### https://app.netlify.com/sites/venerable-duckanoo-7d9ffa/deploys
