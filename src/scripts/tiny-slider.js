@@ -12,7 +12,7 @@ var slider = tns({
     autoWidth:true,
     controls:true,
     controlsPosition:'bottom',
-    controlsText:["<", ">"],
+    controlsText:[" ", " "],
     navAsThumbnails:true,
     loop: false,
 });

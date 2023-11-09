@@ -22,7 +22,7 @@
 
 	form .title {
 		text-align: center;
-		font-size: clamp(2rem,8vw,4.5rem);
+		font-size: clamp(2rem,8vw,4rem);
         color: var(--c1);
         width: auto;
         font-weight: 700;

@@ -114,13 +114,33 @@
     z-index: 1;
     border: 0.2rem solid var(--light);
     line-height: 1;
+    position: relative;
+}
+
+.tns-controls button::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-top: 0.3rem solid;
+    border-right: 0.3rem solid;
+}
+
+.tns-controls button:first-of-type:after {
+    transform: rotate(-135deg);
+}
+
+.tns-controls button:last-of-type:after {
+    transform: rotate(45deg);
 }
 
 .tns-controls button[disabled] {
     background-color: var(--light-b);
     color: var(--light);
     cursor: default;
-    border: 0.1rem solid var(--light-b);
+    border: 0.3rem solid var(--light);
 }
 
 .tns-lazy-img.tns-complete {

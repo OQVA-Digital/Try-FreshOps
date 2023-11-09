@@ -151,8 +151,8 @@ h1 span {
     -moz-transform: scale(1.02);
     -ms-transform: scale(1.02);
     -o-transform: scale(1.02);
-    animation: spin 28s linear infinite;
-    -webkit-animation: spin 28s linear infinite;
+    animation: spin 20s linear infinite;
+    -webkit-animation: spin 20s linear infinite;
 }
 
 .roulette .borders .center {
@@ -265,7 +265,7 @@ h1 span {
     background-color: rgb(255 255 255 / 38%);
 }
 
-.roulette .icons.stop, .roulette .icons .spin_ctnr.stop {
+.roulette .icons.stop, .roulette .icons .spin_ctnr.stop, .roulette .borders svg.dotted.stop {
     animation-play-state: paused;
 }
 
@@ -540,8 +540,9 @@ section:not(.intro) h2 {
 }
 
 .benefits li .content h3 {
-    font-size: clamp(1.3rem, 3.8vw, 2rem);
+    font-size: clamp(1.3rem, 3.8vw, 2.1rem);
     font-weight: 700;
+    color: var(--c4);
     line-height: 1.1;
 }
 
@@ -549,6 +550,7 @@ section:not(.intro) h2 {
     font-size: clamp(1rem, 2.8vw, 1.5rem);
     font-weight: 600;
     color: var(--grey);
+    line-height: 1.5;
 }
 
 .benefits .cta {
@@ -1274,7 +1276,7 @@ section:not(.intro).presentation h2 {
     }
 
     .testimonials .box > .ctnr {
-        padding: clamp(3rem, 20vw, 7rem);
+        padding: clamp(3rem, 20vw, 3rem);
         padding-right: clamp(3rem, 20vw, 10rem);
         margin-inline: calc((100vw - var(--width-1)));
     }

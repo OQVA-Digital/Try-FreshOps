@@ -35,7 +35,7 @@ import { getCollection } from "astro:content";
 const testimonials = await getCollection("testimonials");
 ---
 
-<Layout title="freshOps - Scale your cleaning business by automating scheduling." description="Scale your cleaning business by automating scheduling.">
+<Layout title="freshOps - Scale your cleaning business by automating scheduling." description="Scale your cleaning business by automating scheduling." transition:persist>
     <section class="intro">
         <div class="base_width">
             <div class="content reveal">
@@ -149,10 +149,8 @@ const testimonials = await getCollection("testimonials");
 
                         <a href="#timesheet-and-payroll">Learn More</a>
                     </div>
-
-                    <script>
-                        import '../scripts/description-carousel.js'
-                    </script>
+                    
+                    <script src="../scripts/description-carousel.js"></script>
                 </div>
             </div>
         </div>

@@ -20,6 +20,8 @@ html.sr .reveal, html.sr .reveal_steps1,  html.sr .reveal_steps2 {
     --c3:#4157aa;
     --c3-a:#5472e4;
 
+    --c4:#007940;
+
     --max-width: 135rem;
 
     --width-1:clamp(15rem, 81vw, var(--max-width));

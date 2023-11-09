@@ -1,3 +1,5 @@
+console.log('foi')
+
 let bullets = document.querySelectorAll('.intro .descriptions .bullet')
 
 let carouselBts = document.querySelectorAll('.roulette .icons button')
@@ -5,7 +7,7 @@ let carouselBts = document.querySelectorAll('.roulette .icons button')
 let rouletteIcons = document.querySelector('.roulette .icons')
 let spinContainers = document.querySelectorAll('.roulette .icons .spin_ctnr')
 
-
+let dottedBorder = document.querySelector('.roulette .borders svg.dotted')
 
 
 let counter = 0;
@@ -47,6 +49,7 @@ function alternateBullet() {
         
         carouselBts[i].addEventListener('mouseover', function() {
             rouletteIcons.classList.add('stop')
+            dottedBorder.classList.add('stop')
 
             for(let j=0;j<spinContainers.length;j++) {
                 spinContainers[j].classList.add('stop')
@@ -58,6 +61,7 @@ function alternateBullet() {
 
             for(let j=0;j<spinContainers.length;j++) {
                 spinContainers[j].classList.remove('stop')
+                dottedBorder.classList.remove('stop')
             }
         })
     }
