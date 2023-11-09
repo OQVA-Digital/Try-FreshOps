@@ -294,7 +294,7 @@ h1 span {
 
 .roulette .icons .spin_ctnr {
     background-color: var(--c1);
-    border: 0.3rem solid var(--light);
+    border: 0.2rem solid #cee979;
     box-sizing: border-box;
     animation: spin 40s linear infinite reverse;
     -webkit-animation: spin 40s linear infinite reverse;
@@ -315,6 +315,7 @@ h1 span {
     -moz-transition: background-color 0.3s ease;
     -ms-transition: background-color 0.3s ease;
     -o-transition: background-color 0.3s ease;
+    box-shadow: inset 1rem 1rem 2rem #aed242, inset -1rem -1rem 2rem #92be09;
 }
 
 .roulette .icons .spin_ctnr:hover {
@@ -492,7 +493,7 @@ section:not(.intro) h2 {
     -moz-border-radius: 10rem;
     -ms-border-radius: 10rem;
     -o-border-radius: 10rem;
-    box-shadow: 0 1rem 2rem -1rem var(--light-a);
+    box-shadow: 0.6rem 0.7rem var(--light-a), 0 1rem 2rem -1rem var(--light-a);
 }
 
 .benefits .icon_ctnr {

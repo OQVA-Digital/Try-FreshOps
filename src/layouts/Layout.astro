@@ -1,7 +1,7 @@
 ---
 interface Props {
 	title: string;
-	description: string;
+	description?: string;
 }
 
 const { title, description } = Astro.props;
@@ -10,14 +10,21 @@ import BaseHead from '../components/BaseHead.astro';
 
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro';
+
+import CookieConsentBanner from "../components/CookieConsentBanner.astro";
+import OQVABadge from '../components/OQVABadge.astro';
 ---
 
 <!doctype html>
 <html lang="en">
-	<BaseHead title={title} description={description}/>
+	<BaseHead title={title} description={description ? description : "DEFAULT DESCRIPTION"}/>
 	<body>
 		<Header/>
 		<slot />
 		<Footer/>
 	</body>
+
+	<CookieConsentBanner></CookieConsentBanner>
+
+	<OQVABadge/>
 </html>

@@ -137,7 +137,7 @@ import Logo from '../assets/logo/logo.png'
         border-radius: 5rem;
         position: relative;
         color: var(--grey);
-        padding: clamp(0.7rem,3.5vw,1.4rem) clamp(1.6rem,11vw,4rem) clamp(0.7rem,3.5vw,1.4rem) clamp(1.6rem,7vw,3.3rem);
+        padding: clamp(0.7rem,3.5vw,1.4rem) clamp(1.6rem, 10vw, 5rem) clamp(0.7rem,3.5vw,1.4rem) clamp(1.6rem,7vw,3.3rem);
         font-size: inherit;
     }
 
@@ -149,7 +149,7 @@ import Logo from '../assets/logo/logo.png'
         content: "";
         position: absolute;
         inset: 0.4rem;
-        background-color: rgb(255 255 255 / 62%);
+        background-color: rgb(255 255 255 / 75%);
         border-radius: 5rem;
         transition: background-color 0.2s ease;
     }
@@ -224,12 +224,14 @@ import Logo from '../assets/logo/logo.png'
             margin-inline: unset;
             padding-inline: 1.5rem;
             background-color: transparent;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+            border: 0.2rem solid transparent;
         }
 
         nav a:hover {
-            background-color: var(--light-a);
-            transition: background-color 0s ease;
+            background-color: var(--light);
+            transition: background-color 0s ease, border-color 0s ease;
+            border-color:var(--light-a)
         }
 
         nav, nav > .ctnr {

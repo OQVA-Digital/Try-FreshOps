@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "public/images/media"
+public_folder: "/images/media"
+
+collections:
+  - name: "testimonials"
+    label: "Testimonial"
+    folder: "src/content/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "avatar", name: "avatar", widget: "image"}
+      - {label: "Quote Text", name: "quoteText", widget: "text"}
+      - {label: "Author", name: "author", widget: "string"}

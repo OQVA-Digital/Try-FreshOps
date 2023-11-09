@@ -21,7 +21,7 @@ import Logo from '../assets/logo/logo.png'
         </div>
 
         <nav>
-            <a href="#pricing"><span></span>Pricing</a>
+            <a href="#plans"><span></span>Pricing</a>
             <a href="#features"><span></span>Features</a>
             <a href="/contact/"><span></span>Contact</a>
             <a href="/privacy-policy/"><span></span>Privacy Policy</a>
@@ -52,6 +52,8 @@ import Logo from '../assets/logo/logo.png'
             </div>
         </div>
     </div>
+
+    <svg class="corner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100.5 100.5"><path style="fill:#12281d;stroke-width:0px;" d="m0,100.5h100.5V0c0,55.51-44.99,100.5-100.5,100.5Z"/></svg>
 </footer>
 
 <style>
@@ -62,6 +64,15 @@ import Logo from '../assets/logo/logo.png'
         font-size: clamp(1rem,3.9vmin,1.7rem);
         line-height: 1.5;
         border-radius: 10rem 0 0 0;
+        position: relative;
+    }
+
+    .corner {
+        position: absolute;
+        bottom: calc(100% - 1px);
+        width: clamp(3rem,10vw,9rem);
+        height: clamp(3rem,10vw,9rem);
+        right: 0;
     }
 
     footer > .base_width {
@@ -116,10 +127,10 @@ import Logo from '../assets/logo/logo.png'
 
     footer nav a span {
         display: block;
-        border-bottom: 0.5rem solid var(--grey);
-        border-right: 0.5rem solid var(--grey);
-        border-top: 0.5rem solid transparent;
-        border-left: 0.5rem solid transparent;
+        border-bottom: 0.35rem solid var(--grey);
+        border-right: 0.35rem solid var(--grey);
+        border-top: 0.35rem solid transparent;
+        border-left: 0.35rem solid transparent;
         transform: rotate(-45deg);
         transition: border 0.4s ease;
     }

@@ -29,6 +29,10 @@ import Inclean from "../assets/clients/Inclean.png"
 import ISSACleaning from "../assets/clients/ISSA-Cleaning.png"
 import ProCleaningAcademy from "../assets/clients/Professional-Cleaning-Academy.png"
 import Soway from "../assets/clients/Soway.png"
+
+import { getCollection } from "astro:content";
+
+const testimonials = await getCollection("testimonials");
 ---
 
 <Layout title="freshOps - Scale your cleaning business by automating scheduling." description="Scale your cleaning business by automating scheduling.">
@@ -141,7 +145,7 @@ import Soway from "../assets/clients/Soway.png"
 
                         <h3>Timesheet & Payroll</h3>
 
-                        <p>No more chasing Timesheets and having to question every item. freshOps pulls Timesheet records from your team Time & Attendance onsite.</p>
+                        <p>No more chasing Timesheets and having to question every item. <b>freshOps pulls Timesheet records from your team Time & Attendance onsite.</b></p>
 
                         <a href="#timesheet-and-payroll">Learn More</a>
                     </div>
@@ -340,47 +344,25 @@ import Soway from "../assets/clients/Soway.png"
         </script>
 
         <div class="slider">
-            <div class="box">
-                <div class="ctnr">
-                    <img class="photo" src="" alt="s avatar"/>
-    
-                    <div class="content">
-                        <blockquote>
-                                <p>"I've never felt more in control of my operations. freshOps has been a game-changer for my cleaning business."</p>
-                        </blockquote>
-                        
-                        <p class="author">Jane D., Manchester</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="box">
-                <div class="ctnr">
-                    <img class="photo" src="" alt="s avatar"/>
-    
-                    <div class="content">
-                        <blockquote>
-                                <p>"I've never felt more in control of my operations. freshOps has been a game-changer for my cleaning business."</p>
-                        </blockquote>
-                        
-                        <p class="author">Jane D., Manchester</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="ctnr">
-                    <img class="photo" src="" alt="s avatar"/>
-    
-                    <div class="content">
-                        <blockquote>
-                                <p>"I've never felt more in control of my operations. freshOps has been a game-changer for my cleaning business."</p>
-                        </blockquote>
-                        
-                        <p class="author">Jane D., Manchester</p>
-                    </div>
-                </div>
-            </div>
+            {
+                testimonials.map((testimonials) => (
+                    <>
+                        <div class="box">
+                            <div class="ctnr">
+                                <img src={testimonials.data.avatar} class="photo" alt={`${testimonials.data.author} avatar image`} draggable="false"/>
+                
+                                <div class="content">
+                                    <blockquote>
+                                            <p set:html={testimonials.data.quoteText}></p>
+                                    </blockquote>
+                                    
+                                    <p class="author">Jane D., Manchester</p>
+                                </div>
+                            </div>
+                        </div>
+                    </>
+                ))
+            }
         </div>
 
         <div class="clients">
