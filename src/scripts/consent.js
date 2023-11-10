@@ -1,5 +1,3 @@
-console.log('CONSENT')
-
 function hideBanner() {
     document.getElementById('cookie-consent-banner').style.display = 'none';
 }
@@ -47,4 +45,3 @@ function setConsent(consent) {
     gtag('consent', 'update', consent);  
     localStorage.setItem('consentMode', JSON.stringify(consentMode));
 }
-    
