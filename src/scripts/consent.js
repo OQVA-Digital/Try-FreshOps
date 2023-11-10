@@ -2,8 +2,6 @@ function hideBanner() {
     document.getElementById('cookie-consent-banner').style.display = 'none';
 }
 
-console.log('consent mode:' + localStorage.getItem('consentMode'))
-
 if(localStorage.getItem('consentMode') === null) {
     
     document.getElementById('btn-accept-all').addEventListener('click', function() {
