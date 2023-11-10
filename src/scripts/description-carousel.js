@@ -1,5 +1,3 @@
-console.log('foi')
-
 let bullets = document.querySelectorAll('.intro .descriptions .bullet')
 
 let carouselBts = document.querySelectorAll('.roulette .icons button')

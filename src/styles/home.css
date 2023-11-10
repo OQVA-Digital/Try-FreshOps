@@ -151,8 +151,8 @@ h1 span {
     -moz-transform: scale(1.02);
     -ms-transform: scale(1.02);
     -o-transform: scale(1.02);
-    animation: spin 20s linear infinite;
-    -webkit-animation: spin 20s linear infinite;
+    animation: spin 60s linear infinite;
+    -webkit-animation: spin 60s linear infinite;
 }
 
 .roulette .borders .center {
@@ -351,35 +351,35 @@ h1 span {
 }
 
 .roulette .icons button:nth-child(2) {
-    transform: translate(calc(var(--roulette-size) / 2.2), calc(var(--roulette-size) / -5.5));
-    -webkit-transform: translate(calc(var(--roulette-size) / 2.2), calc(var(--roulette-size) / -5.5));
-    -moz-transform: translate(calc(var(--roulette-size) / 2.2), calc(var(--roulette-size) / -5.5));
-    -ms-transform: translate(calc(var(--roulette-size) / 2.2), calc(var(--roulette-size) / -5.5));
-    -o-transform: translate(calc(var(--roulette-size) / 2.2), calc(var(--roulette-size) / -5.5));
+    transform: translate(calc(var(--roulette-size) / 2.15), calc(var(--roulette-size) / -7));
+    -webkit-transform: translate(calc(var(--roulette-size) / 2.15), calc(var(--roulette-size) / -7));
+    -moz-transform: translate(calc(var(--roulette-size) / 2.15), calc(var(--roulette-size) / -7));
+    -ms-transform: translate(calc(var(--roulette-size) / 2.15), calc(var(--roulette-size) / -7));
+    -o-transform: translate(calc(var(--roulette-size) / 2.15), calc(var(--roulette-size) / -7));
 }
 
 .roulette .icons button:nth-child(3) {
-    transform: translate(calc(var(--roulette-size) / 2.9), calc(var(--roulette-size) / 2.6));
-    -webkit-transform: translate(calc(var(--roulette-size) / 2.9), calc(var(--roulette-size) / 2.6));
-    -moz-transform: translate(calc(var(--roulette-size) / 2.9), calc(var(--roulette-size) / 2.6));
-    -ms-transform: translate(calc(var(--roulette-size) / 2.9), calc(var(--roulette-size) / 2.6));
-    -o-transform: translate(calc(var(--roulette-size) / 2.9), calc(var(--roulette-size) / 2.6));
+    transform: translate(calc(var(--roulette-size) / 3.3), calc(var(--roulette-size) / 2.5));
+    -webkit-transform: translate(calc(var(--roulette-size) / 3.3), calc(var(--roulette-size) / 2.5));
+    -moz-transform: translate(calc(var(--roulette-size) / 3.3), calc(var(--roulette-size) / 2.5));
+    -ms-transform: translate(calc(var(--roulette-size) / 3.3), calc(var(--roulette-size) / 2.5));
+    -o-transform: translate(calc(var(--roulette-size) / 3.3), calc(var(--roulette-size) / 2.5));
 }
 
 .roulette .icons button:nth-child(4) {
-    transform: translate(calc(var(--roulette-size) / -2.9), calc(var(--roulette-size) / 2.6));
-    -webkit-transform: translate(calc(var(--roulette-size) / -2.9), calc(var(--roulette-size) / 2.6));
-    -moz-transform: translate(calc(var(--roulette-size) / -2.9), calc(var(--roulette-size) / 2.6));
-    -ms-transform: translate(calc(var(--roulette-size) / -2.9), calc(var(--roulette-size) / 2.6));
-    -o-transform: translate(calc(var(--roulette-size) / -2.9), calc(var(--roulette-size) / 2.6));
+    transform: translate(calc(var(--roulette-size) / -3.3), calc(var(--roulette-size) / 2.5));
+    -webkit-transform: translate(calc(var(--roulette-size) / -3.3), calc(var(--roulette-size) / 2.5));
+    -moz-transform: translate(calc(var(--roulette-size) / -3.3), calc(var(--roulette-size) / 2.5));
+    -ms-transform: translate(calc(var(--roulette-size) / -3.3), calc(var(--roulette-size) / 2.5));
+    -o-transform: translate(calc(var(--roulette-size) / -3.3), calc(var(--roulette-size) / 2.5));
 }
 
 .roulette .icons button:nth-child(5) {
-    transform: translate(calc(var(--roulette-size) / -2.2), calc(var(--roulette-size) / -5.5));
-    -webkit-transform: translate(calc(var(--roulette-size) / -2.2), calc(var(--roulette-size) / -5.5));
-    -moz-transform: translate(calc(var(--roulette-size) / -2.2), calc(var(--roulette-size) / -5.5));
-    -ms-transform: translate(calc(var(--roulette-size) / -2.2), calc(var(--roulette-size) / -5.5));
-    -o-transform: translate(calc(var(--roulette-size) / -2.2), calc(var(--roulette-size) / -5.5));
+    transform: translate(calc(var(--roulette-size) / -2.15), calc(var(--roulette-size) / -7));
+    -webkit-transform: translate(calc(var(--roulette-size) / -2.15), calc(var(--roulette-size) / -7));
+    -moz-transform: translate(calc(var(--roulette-size) / -2.15), calc(var(--roulette-size) / -7));
+    -ms-transform: translate(calc(var(--roulette-size) / -2.15), calc(var(--roulette-size) / -7));
+    -o-transform: translate(calc(var(--roulette-size) / -2.15), calc(var(--roulette-size) / -7));
 }
 
 .benefits h2::before, .features h2::before, .testimonials h2::before, .pricing h2::before, .presentation h2::before {
@@ -391,7 +391,7 @@ h1 span {
     margin-inline: auto;
     background-color: var(--light);
     border-radius: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .benefits h2::before {
@@ -407,7 +407,7 @@ h1 span {
 }
 
 section.benefits {
-    padding-block: 8rem 10rem;
+    padding-block: 5rem 10rem;
     position: relative;
 }
 
@@ -572,7 +572,7 @@ section:not(.intro) h2 {
 
 
 section.features {
-    background-color:var(--light-b);
+    background-color:var(--c3);
     position: relative;
     padding-block: 3rem 30rem;
     margin-block: clamp(0rem, 7vw, 10rem) 10rem;
@@ -583,7 +583,7 @@ section.features {
 }
 
 .features .curve path {
-    fill:var(--light-b);
+    fill:var(--c3);
     stroke-width:0px;
 }
 
@@ -602,22 +602,23 @@ section.features {
 
 section.features h2 {
     text-align: center;
-    font-size: clamp(1.5rem, 5vw, 2.8rem);
+    font-size: clamp(1.5rem, 5vw, 2.6rem);
     margin-inline: auto;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.15;
+    color: #869fff;
 }
 
 section.features h2 b {
-    font-size: 1.6em;
-    color:var(--c3);
+    font-size: 1.8em;
     display: block;
+    color: var(--light);
 }
 
 .features .base_width {
     display: flex;
     flex-direction: column;
-    gap: clamp(6rem, 4vw, 8rem);
+    gap: clamp(6rem, 4.5vw, 8rem);
 }
 
 .features ul {
@@ -638,19 +639,29 @@ section.features h2 b {
     -o-border-radius: 50%;
     position: relative;
     scroll-margin-top: 30vh;
-    box-shadow: 0 1rem 3rem #cbdaff;
+    /*box-shadow: 0 1rem 3rem #cbdaff;
+    */border: 0.2rem solid transparent;
+    transition: border-color 0.1s ease;
+    -webkit-transition: border-color 0.1s ease;
+    -moz-transition: border-color 0.1s ease;
+    -ms-transition: border-color 0.1s ease;
+    -o-transition: border-color 0.1s ease;
+}
+
+.features li:hover {
+    border-color:var(--c3-a);
 }
 
 .features li:not(:last-child):after {
     content: '';
     position: absolute;
     right: 0;
-    left:0;
+    left: 0;
     bottom: calc(clamp(6rem, 24vw, 7rem) / -2);
     margin-inline: auto;
-    width: 1rem;
-    height: 1rem;
-    background-color: var(--light);
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: var(--c3-a);
     border-radius: 50%;
 }
 
@@ -660,7 +671,7 @@ section.features h2 b {
     height: 100%;
     left: 0;
     right: 0;
-    background-image: conic-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+    background-image: conic-gradient(var(--c3), #485eb5);
     animation: spin 25s linear infinite;
     -webkit-animation: spin 25s linear infinite;
 }
@@ -684,11 +695,12 @@ section.features h2 b {
 .features ul .icon {
     position: absolute;
     top: 0;
-    width: 6rem;
+    width: 5.5rem;
     left: 0;
     right: 0;
     margin-inline: auto;
     transform: translateY(-50%);
+    color: var(--light);
 }
 
 .features .content {
@@ -706,23 +718,24 @@ section.features h2 b {
 }
 
 .features ul h3 {
-    font-size: clamp(2.3rem, 6vw, 3rem);
+    font-size: clamp(2.3rem, 6vw, 2.6rem);
     font-weight: 700;
-    color: var(--c3);
+    color: var(--light);
     line-height: 1.2;
 }
 
 .features ul p {
     font-size: clamp(1.5rem, 4vw, 1.6rem);
     font-weight: 500;
+    color: var(--light-b);
 }
 
 .features .cta {
     margin-inline: auto;
-    background-color: var(--dark);
+    background-color: var(--c3-a);
     color: var(--light);
-    border: 0.4rem solid var(--c3);
-    font-weight: 600;
+    border: 0.1rem solid #6086eb;
+    font-weight: 500;
 }
 
 
@@ -736,14 +749,15 @@ section.features h2 b {
 
 
 section.testimonials {
-    margin-top: -28rem;
+    margin-top: -30rem;
     position: relative;
     overflow: hidden;
     padding-bottom: 10rem;
 }
 
 .testimonials h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    color:var(--light);
 }
 
 .testimonials .slider {
@@ -802,12 +816,11 @@ section.testimonials {
     align-items: center;
     gap: clamp(2rem, 9vw, 4rem);
     box-sizing: border-box;
-    background-color: var(--c3);
-    background-image: linear-gradient(25deg, var(--c3) 50%, var(--c3-a));
+    background-color: var(--light-b);
+    /* background-image: linear-gradient(25deg, var(--c3) 50%, var(--c3-a)); */
     border-radius: 50rem;
     padding: clamp(3rem, 15vw, 7rem) clamp(3rem, 10vw, 7rem) clamp(3rem, 19vw, 15rem);
-    color: var(--light);
-    box-shadow: 0 1.3rem 0.5rem var(--light-b);
+    color: var(--dark-a);
 }
 
 .testimonials .slider .content {
@@ -827,18 +840,6 @@ section.testimonials {
     border-bottom: 0.4rem solid var(--primary);
     border-right: 0.4rem solid var(--primary);
     border-radius: 0 0 4rem 0;
-}
-.testimonials .name {
-    font-size: 1em;
-    font-weight: 600;
-    color: var(--primary-a);
-    line-height: 1.2;
-}
-
-.testimonials .description {
-    font-size: clamp(1rem, 4vw, 1.5rem);
-    color: var(--grey);
-    max-width: 50vw;
 }
 
 .testimonials .photo {
@@ -877,12 +878,13 @@ section.testimonials {
     flex-direction: column;
     gap: 1rem;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .testimonials .author {
-    font-size: clamp(1.5rem, 4vmin, 2rem);
-    color: var(--light-b);
+    font-size: clamp(1.5rem, 4vmin, 1.8rem);
+    font-weight: 700;
+    color: var(--c3);
 }
 
 /* .testimonials .slider img {
@@ -966,7 +968,7 @@ section:not(.intro).pricing h2 {
     font-size: clamp(2.2rem, 8vw, 4.3rem);
     font-weight: 700;
     color: var(--c3);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .plans {
@@ -982,7 +984,7 @@ section:not(.intro).pricing h2 {
 }
 
 .plans .plan {
-    padding: clamp(3rem, 11vw, 7rem) 3rem 5rem;
+    padding: clamp(3rem, 11vw, 7rem) 3rem 6rem;
     border-radius: 20rem 20rem 9rem 9rem;
     -webkit-border-radius: 20rem 20rem 9rem 9rem;
     -moz-border-radius: 20rem 20rem 9rem 9rem;
@@ -1055,7 +1057,7 @@ section:not(.intro).pricing h2 {
     justify-content: center;
     align-items: center;
     gap: 0.6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
 }
 
 .plan .bullets p {
@@ -1068,12 +1070,12 @@ section:not(.intro).pricing h2 {
 }
 
 .plan > hr {
-    width: 4.5rem;
-    height: 0.6rem;
+    width: 3.5rem;
+    height: 0.4rem;
     display: block;
     margin-inline: auto;
     background-color: var(--light);
-    margin-block: clamp(2rem, 5vw, 3rem);
+    margin-block: clamp(2rem, 5vw, 2.5rem);
     border-radius: 1.8rem;
     -webkit-border-radius: 1.8rem;
     -moz-border-radius: 1.8rem;
@@ -1098,14 +1100,12 @@ section:not(.intro).pricing h2 {
 
 .plans .cta {
     font-weight: 600;
-    border: 0.3rem solid var(--light-b);
 }
 
 .plan.accelerator .cta {
     background-color: var(--c3);
     background-image: linear-gradient(25deg, var(--c3) 50%, var(--c3-a));
     color:var(--light);
-    border-color: var(--light);
 }
 
 .plan.accelerator {
@@ -1147,6 +1147,44 @@ section:not(.intro).pricing h2 {
     font-weight: 700;
 }
 
+.plan .price {
+    position: absolute;
+    bottom: 0;
+    font-size: clamp(2.5rem, 3vw, 3rem);
+    font-weight: 800;
+    transform: translateY(30%);
+    color: var(--dark-a);
+    background-color: var(--light-b);
+    padding: 0.8rem 1.7rem;
+    line-height: 1;
+    border-radius: 10rem;
+    /* border: 0.3rem solid var(--light); */
+}
+
+.plan.accelerator .price {
+    background-color: var(--light);
+    border: 0.4rem solid var(--light-b);
+}
+
+.plan.premier .price {
+    background-color: var(--c3-a);
+    color: var(--light);
+    font-weight: 700;
+}
+
+.plan.master .price {
+    background-color: var(--c1-a);
+}
+
+.plan.enterprise .price {
+    background-color: #203c2e;
+    color: var(--c1-a);
+    font-weight: 700;
+}
+
+.plan .price span {
+
+}
 
 
 
@@ -1157,6 +1195,7 @@ section:not(.intro).pricing h2 {
 
 .contact_sec_ctnr .bottom_mask {
     position: absolute;
+    z-index: -1;
 }
 
 .contact_sec_ctnr .bottom_mask:first-of-type {
@@ -1253,8 +1292,8 @@ section:not(.intro).presentation h2 {
     }
 
     .intro {
-        padding-bottom: clamp(calc(var(--header-height) / 2), 20vw, 20rem);
-        padding-top: clamp(calc(var(--header-height) / 2), 20vw, 24rem);
+        padding-bottom: clamp(calc(var(--header-height) / 2), 20vw, 19rem);
+        padding-top: clamp(calc(var(--header-height) / 2), 20vw, 22rem);
     }
 
     .intro .base_width {

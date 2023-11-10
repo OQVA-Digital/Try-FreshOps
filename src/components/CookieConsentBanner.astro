@@ -40,14 +40,14 @@
     right: 2rem;
     background-color: var(--dark-a);
     color: var(--c1-a);
-    padding: 3rem clamp(1.3rem,5vw,4rem);
+    padding: 3rem clamp(1.3rem,5vw,5rem);
     text-align: center;
     z-index: 11;
     margin-inline: auto;
     box-sizing: border-box;
-    border-radius: 2rem;
+    border-radius: 2rem 5rem;
     border: 0.1rem solid var(--c1-a);
-    max-width: var(--width-1);
+    max-width: var(--max-width);
 }
 
 .cookie-consent-banner > .flex {
@@ -139,10 +139,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: clamp(1rem, 2vw, 2rem);
 }
 
 .cookie-consent-options label {
-    margin: 0 clamp(0rem, 1vw, 1rem);
+    /* margin: 0 clamp(0rem, 1vw, 1rem); */
     font-size: 14px;
     color: var(--light-a);
 }
