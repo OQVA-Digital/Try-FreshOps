@@ -649,7 +649,7 @@ section.features h2 b {
 }
 
 .features li:hover {
-    border-color:var(--c3-a);
+    border-color:#465fbb;
 }
 
 .features li:not(:last-child):after {
@@ -661,7 +661,7 @@ section.features h2 b {
     margin-inline: auto;
     width: 0.8rem;
     height: 0.8rem;
-    background-color: var(--c3-a);
+    background-color: #465fbb;
     border-radius: 50%;
 }
 
@@ -978,9 +978,10 @@ section:not(.intro).pricing h2 {
     align-items: baseline;
     gap: var(--corner-width);
     overflow-x: auto;
+    overflow-y: hidden;
     padding-inline: calc(50vw - (clamp(15rem, 59vw, 23rem) / 1.5));
     scroll-snap-type: x mandatory;
-    padding-block: 1rem 2rem;
+    padding-block: 2rem 4rem;
 }
 
 .plans .plan {
@@ -1149,16 +1150,21 @@ section:not(.intro).pricing h2 {
 
 .plan .price {
     position: absolute;
-    bottom: 0;
-    font-size: clamp(2.5rem, 3vw, 3rem);
+    bottom: -3rem;
+    font-size: clamp(2.5rem, 9vw, 6rem);
     font-weight: 800;
-    transform: translateY(30%);
     color: var(--dark-a);
     background-color: var(--light-b);
-    padding: 0.8rem 1.7rem;
+    padding: 0.8rem 2rem 1rem;
     line-height: 1;
     border-radius: 10rem;
     /* border: 0.3rem solid var(--light); */
+}
+
+.plan .price sub {
+    display: block;
+    font-size: 0.4em;
+    font-weight: 700;
 }
 
 .plan.accelerator .price {
@@ -1352,6 +1358,10 @@ section:not(.intro).presentation h2 {
 
     .plans {
         gap:4rem;
+    }
+
+    .plan .price {
+        font-size: 3rem;
     }
 }
 
